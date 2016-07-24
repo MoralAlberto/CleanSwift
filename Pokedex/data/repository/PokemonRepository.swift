@@ -1,11 +1,3 @@
-//
-//  PokemonRepository.swift
-//  Pokedex
-//
-//  Created by Alberto Moral on 23/7/16.
-//  Copyright © 2016 Alberto Moral. All rights reserved.
-//
-
 import Foundation
 
 final class PokemonRepository {
@@ -15,10 +7,9 @@ final class PokemonRepository {
         self.localDataSource = localDataSource
     }
     
-    func getPokemonList() -> Array<Pokemon> {
+    func getPokemonList() -> [Pokemon] {
         let pokemons = self.localDataSource.getPokemonList()
-        let result = PokemonDataMapper.map(pokemons)
+        let result = PokemonDataMapper.mapping(pokemons)
         return result
-//        return map(localDataSource.getPokemonList())
     }
 }

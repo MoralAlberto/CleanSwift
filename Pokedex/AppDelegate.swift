@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        self.window?.rootViewController = PokedexViewController()
+        let navigation = UINavigationController(rootViewController: PokedexViewController())
+        self.window?.rootViewController = navigation
         self.window?.makeKeyAndVisible()
         
         return true

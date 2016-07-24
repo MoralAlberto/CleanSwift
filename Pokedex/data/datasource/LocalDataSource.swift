@@ -1,16 +1,8 @@
-//
-//  LocalDataSource.swift
-//  Pokedex
-//
-//  Created by Alberto Moral on 23/7/16.
-//  Copyright © 2016 Alberto Moral. All rights reserved.
-//
-
 import Foundation
 
 final class LocalDataSource {
     
-    private var cache = Array<PokemonData>()
+    private var cache = [PokemonData]()
     
     init() {
         for count in 1...100 {
@@ -23,7 +15,7 @@ final class LocalDataSource {
         cache.append(pokemon)
     }
     
-    func getPokemonList() -> Array<PokemonData> {
+    func getPokemonList() -> [PokemonData] {
         return cache
     }
 }

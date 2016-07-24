@@ -122,11 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				3976FD451D43C133006031C7 /* AppDelegate.swift */,
-				3976FD491D43C133006031C7 /* Main.storyboard */,
-				3976FD731D43C42B006031C7 /* data */,
-				3976FD771D43C42B006031C7 /* domain */,
-				3976FD781D43C42B006031C7 /* presenter */,
+				39CCF35E1D43F69200F4566B /* Resources */,
 				3976FD791D43C42B006031C7 /* view */,
+				3976FD781D43C42B006031C7 /* presenter */,
+				3976FD771D43C42B006031C7 /* domain */,
+				3976FD731D43C42B006031C7 /* data */,
 				3976FD4C1D43C133006031C7 /* Assets.xcassets */,
 				3976FD4E1D43C133006031C7 /* LaunchScreen.storyboard */,
 				3976FD511D43C133006031C7 /* Info.plist */,
@@ -155,9 +155,9 @@
 		3976FD731D43C42B006031C7 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				3976FD741D43C42B006031C7 /* datasource */,
 				3976FD751D43C42B006031C7 /* model */,
 				3976FD761D43C42B006031C7 /* repository */,
+				3976FD741D43C42B006031C7 /* datasource */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -231,6 +231,14 @@
 				3976FD861D43CD3E006031C7 /* GetPokemonListUseCase.swift */,
 			);
 			path = usecase;
+			sourceTree = "<group>";
+		};
+		39CCF35E1D43F69200F4566B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3976FD491D43C133006031C7 /* Main.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

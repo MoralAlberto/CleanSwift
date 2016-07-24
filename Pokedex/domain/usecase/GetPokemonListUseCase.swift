@@ -20,3 +20,6 @@ final class getPokemonListUseCase {
         return repository.getPokemonList()
     }
 }
+
+//  Protocol use case y el interactor es quien implementa la logica
+//  Caso de uso es la barrera entre el main thread y colas en background
