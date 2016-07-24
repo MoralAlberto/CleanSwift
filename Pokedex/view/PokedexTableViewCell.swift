@@ -1,11 +1,3 @@
-//
-//  PokedexTableViewCell.swift
-//  Pokedex
-//
-//  Created by Alberto Moral on 23/7/16.
-//  Copyright © 2016 Alberto Moral. All rights reserved.
-//
-
 import UIKit
 
 class PokedexTableViewCell: UITableViewCell {
@@ -22,5 +14,6 @@ class PokedexTableViewCell: UITableViewCell {
     func configureCell(pokemon: Pokemon) {
         mainLabel.text = pokemon.name
         descriptionLabel.text = pokemon.description
+//        imageView?.image = UIImage(named: "pokemon")
     }
 }

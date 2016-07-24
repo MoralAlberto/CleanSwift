@@ -15,8 +15,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v3D-Qh-eyC">
-                        <rect key="frame" x="23" y="5" width="50" height="50"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="v3D-Qh-eyC">
+                        <rect key="frame" x="16" y="5" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="8ch-af-UO0"/>
                             <constraint firstAttribute="height" constant="50" id="ViQ-63-ftS"/>
@@ -25,13 +25,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nil-YM-Kv5">
-                        <rect key="frame" x="84" y="5" width="220" height="20"/>
+                        <rect key="frame" x="77" y="5" width="227" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPD-Vs-t5W">
-                        <rect key="frame" x="84" y="33" width="236" height="21"/>
+                        <rect key="frame" x="77" y="33" width="243" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                     <constraint firstItem="v3D-Qh-eyC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="OA1-uw-py2"/>
                     <constraint firstItem="Nil-YM-Kv5" firstAttribute="leading" secondItem="v3D-Qh-eyC" secondAttribute="trailing" constant="11" id="QSd-fB-0Ti"/>
                     <constraint firstItem="wPD-Vs-t5W" firstAttribute="top" secondItem="Nil-YM-Kv5" secondAttribute="bottom" constant="8" id="Z9h-Uw-ZeD"/>
-                    <constraint firstItem="v3D-Qh-eyC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="bf2-bL-iF0"/>
+                    <constraint firstItem="v3D-Qh-eyC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="bf2-bL-iF0"/>
                     <constraint firstItem="wPD-Vs-t5W" firstAttribute="leading" secondItem="v3D-Qh-eyC" secondAttribute="trailing" constant="11" id="qjb-eS-w0m"/>
                     <constraint firstItem="v3D-Qh-eyC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="wKJ-bE-xcd"/>
                 </constraints>
@@ -63,4 +63,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="pokemon" width="480" height="360"/>
+    </resources>
 </document>

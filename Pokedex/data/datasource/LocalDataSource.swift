@@ -5,8 +5,12 @@ final class LocalDataSource {
     private var cache = [PokemonData]()
     
     init() {
-        for count in 1...100 {
-            buildFakePokemon(count, imageUrl: "", name: "\(count)", description: "Description \(count)")
+        let range = 1...100
+        for count in range {
+            buildFakePokemon(count,
+                             imageUrl: "",
+                             name: "\(count)",
+                             description: "Description \(count)")
         }
     }
     

@@ -1,25 +1,10 @@
-//
-//  GetPokemonListUseCase.swift
-//  Pokedex
-//
-//  Created by Alberto Moral on 23/7/16.
-//  Copyright © 2016 Alberto Moral. All rights reserved.
-//
-
 import Foundation
 
-final class getPokemonListUseCase {
-    private let repository: PokemonRepository
+//  The use case is the protocol to be implemented in the interactor
+//  Upper layer main thread, but here we use background threads
+protocol GetPokemonListUseCase {
+    var repository: PokemonRepository { get }
     
-    
-    init(repository: PokemonRepository) {
-        self.repository = repository
-    }
-    
-    func execute() -> Array<Pokemon> {
-        return repository.getPokemonList()
-    }
+    init(repository: PokemonRepository)
+    func execute() -> [Pokemon]
 }
-
-//  Protocol use case y el interactor es quien implementa la logica
-//  Caso de uso es la barrera entre el main thread y colas en background

@@ -1,11 +1,3 @@
-//
-//  PokedexView.swift
-//  Pokedex
-//
-//  Created by Alberto Moral on 23/7/16.
-//  Copyright © 2016 Alberto Moral. All rights reserved.
-//
-
 import UIKit
 
 class PokedexViewController: UIViewController {
@@ -28,7 +20,7 @@ class PokedexViewController: UIViewController {
         super.viewDidLoad()
         presenter = PokemonPresenterFactory.getPresenter(self)
         configureTableView()
-        presenter!.requestPokemonList()
+        requestPokemonList()
     }
     
     func configureTableView() {
@@ -36,7 +28,6 @@ class PokedexViewController: UIViewController {
         let nib = UINib(nibName: cellName, bundle: nil)
        tableView.registerNib(nib, forCellReuseIdentifier: cellName)
     }
-
 }
 
 extension PokedexViewController: UITableViewDelegate, UITableViewDataSource {
@@ -61,5 +52,11 @@ extension PokedexViewController: PokemonPresenterView {
     func renderPokemons(renderPokemons: Array<Pokemon>) {
         self.pokemonList = renderPokemons
         self.tableView.reloadData()
+    }
+}
+
+extension PokedexViewController: PokemonPresenter {
+    func requestPokemonList() {
+        presenter!.requestPokemonList()
     }
 }

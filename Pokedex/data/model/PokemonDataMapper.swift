@@ -2,6 +2,7 @@ import Foundation
 
 final class PokemonDataMapper {
     static func mapping(list: [PokemonData]) -> [Pokemon] {
+        //  Remove 'toPokemon' init method
         return list.map(Pokemon.init)
     }
 }
